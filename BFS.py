@@ -14,7 +14,7 @@ def search(starting_node):
         if person not in searched:
             if person_we_are_looking_for(person):
                 return True
-        else:
-            search_queue += graph[person]
-            searched.append(person)
+            else:
+                search_queue += graph[person]
+                searched.append(person)
     return False
